@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jiffy</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8ffff;
+    color:#333;
+}
+
+header{
+    background:#1b9ea5;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:700;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#61d3d9,#83e5ea);
+    color:white;
+    padding:40px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:1.3rem;
+    max-width:700px;
+    margin:auto;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:white;
+    color:#61d3d9;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+.about{
+    text-align:center;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#61d3d9;
+    margin-bottom:10px;
+}
+
+.product{
+    background:#eefeff;
+    text-align:center;
+}
+
+.product p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.register{
+    background:#61d3d9;
+    color:white;
+}
+
+form{
+    max-width:500px;
+    margin:auto;
+}
+
+input{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:none;
+    border-radius:10px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    background:white;
+    color:#61d3d9;
+    border:none;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Jiffy</div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#register">Register</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Find in a Jiffy!</h1>
+        <p>
+            Never waste time searching for your keys,
+            chargers, remotes, wallets, or school supplies again.
+            Jiffy helps you find your belongings instantly.
+        </p>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJ_8fQVPIhMbDEBYoKRCEtqgoyX1M4NZknRiGzk6MYzK01hA/viewform?usp=sharing&ouid=116219609014609011509"
+   target="_blank"
+   class="btn">Join Waitlist</a>
+    </div>
+</section>
+
+<section id="about" class="about">
+
+    <h2 class="section-title">What is Jiffy?</h2>
+
+    <p>
+        Jiffy is a smart tracking sticker that helps people locate
+        misplaced items quickly and easily. Simply attach a Jiffy
+        sticker to your belongings and find them using sound,
+        light, or the Jiffy mobile app.
+    </p>
+
+</section>
+
+<section id="features">
+
+    <h2 class="section-title">Why Jiffy?</h2>
+
+    <div class="features">
+
+        <div class="card">
+            <h3>⚡ Instant Finding</h3>
+            <p>Locate lost items within seconds.</p>
+        </div>
+
+        <div class="card">
+            <h3>💰 Affordable</h3>
+            <p>Designed to be cheaper than existing trackers.</p>
+        </div>
+
+        <div class="card">
+            <h3>📱 Easy to Use</h3>
+            <p>Simple app and quick setup.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎒 Everyday Items</h3>
+            <p>Works on keys, wallets, remotes, bags and more.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="product">
+
+    <h2 class="section-title">Our Product</h2>
+
+    <p>
+        The Jiffy Smart Sticker is lightweight, unique designs, durable and easy to attach.
+        Once connected, you can instantly make it ring or flash when an item
+        goes missing. No more wasted time and no more stress.
+    </p>
+
+</section>
+
+<section id="register" class="register">
+
+    <h2 class="section-title">Join the Jiffy Community</h2>
+
+    <p style="
+        text-align:center;
+        max-width:700px;
+        margin:auto;
+        margin-bottom:35px;
+        font-size:1.1rem;
+        line-height:1.8;
+    ">
+        Be among the first people to experience Jiffy and help us
+        revolutionize the way we find everyday items.
+    </p>
+
+    <div style="text-align:center;">
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJ_8fQVPIhMbDEBYoKRCEtqgoyX1M4NZknRiGzk6MYzK01hA/viewform?usp=sharing&ouid=116219609014609011509"
+           target="_blank"
+           class="btn">
+            🚀 Register Now
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <h3>Jiffy</h3>
+    <p>Find in a Jiffy!</p>
+    <br>
+    <p>© 2026 Jiffy. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
